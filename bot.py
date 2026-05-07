@@ -12,8 +12,6 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("styleflow-bot")
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
-MINI_APP_URL = os.getenv("MINI_APP_URL", "").strip()
-BACKEND_API_URL = os.getenv("BACKEND_API_URL", "").strip().rstrip("/")
 PORT = int(os.getenv("PORT", "5000"))
 
 app = Flask(__name__)
